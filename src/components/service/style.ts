@@ -2,50 +2,101 @@ import styled from "styled-components";
 
 export const ServiceBox = styled.div`
 
-background-color: #321c5c;
+background-color: rgb(17,17,17);
 padding: 0;
 margin: 0;
-
 height: 100%;
 display: flex;
 flex-direction: column;
-border-bottom: 5px solid #f70bcf;
-h1{
-    font-size: 80px;
-    color: white;
-   
+flex-wrap: wrap;
+color: white;
+padding: 0 150px;
 
 
-    span{
-        color: #f70bcf;
-}
-}
 
-.father{
+.box{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    align-items: center;
+    padding: 0 150px;
 
-    .children{
+    
+    .triangulo {
+  width: 0;
+  height: 0;
+  border-radius: 5px;
+  position: relative;
+  right: 65px;  
+  top: -100px;
+  padding: 0;
+  margin: 0;  
+  border-left: 30px solid transparent; /* ajuste conforme necessário */
+  border-right: 30px solid transparent; /* ajuste conforme necessário */
+  border-bottom: 50px solid #8e54e9; /* ajuste conforme necessário */
+  z-index: 1;
+}
+.trianguloTwo {
+  width: 0;
+  height: 0;
+  border-radius: 5px;
+  position: relative;
+  left: 80px;  
+  top: -100px;
+  
+  border-left: 30px solid transparent; /* ajuste conforme necessário */
+  border-right: 30px solid transparent; /* ajuste conforme necessário */
+  border-bottom: 50px solid #8e54e9; /* ajuste conforme necessário */
+  padding: 0;
+  margin: 0;
+  z-index: 1;
+}
+    h1{
+        font-size: 27px;
+    }
+    
+
+    p{
+        width: 200px;
+    }
+
+    .circle{
         color: white;
-        background-color: black;
-        margin: 40px;
-        padding: 30px;
-        border-radius: 20px;
-
-        h2{
-            font-size: 30px;
-        }
-
-        p{
-            font-size: 20px;
-            text-align: justify;
-        }
-
+        display: flex;
+        background-color: white;
+        color: #8e54e9;
+        width: 120px;
+        height: 120px;
+        font-size: 50px;
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #8e54e9;
+        background: radial-gradient(circle at center,white 39%,white 40%, white 50%, rgb(17,17,17) 51%);
+        z-index: 2;
+        position: relative;
+        left: 0px;
+    }
+    .circleright{
+        color: white;
+        display: flex;
+        background-color: white;
+        color: #8e54e9;
+        width: 120px;
+        height: 120px;
+        font-size: 50px;
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #8e54e9;
+        background: radial-gradient(circle at center,white 39%,white 40%, white 50%, rgb(17,17,17) 51%);
+        z-index: 2;
+        position: relative;
+        left: -50px;
     }
 }
 
-.uncle{
+/* .uncle{
     display: flex;
     flex-direction: column;
     text-align: start;
@@ -69,6 +120,31 @@ h1{
             width: 160px;
         }
     }
+} */
+
+
+@media only screen and (max-width: 768px){
+    
+    padding: 0 0;
+
+.box{
+    padding: 0;
+    h1{
+        font-size: 24px;
+    }
+
+    div{
+       padding: 0px;
+       margin: 0px;
+    }
+    
+    .triangulo{
+        right: 30px;
+    }
+    .circleright{
+        left: -15px;
+    }
 }
 
+}
 `

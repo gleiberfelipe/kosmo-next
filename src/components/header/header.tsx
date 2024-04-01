@@ -1,4 +1,7 @@
+import kosmologo from "../../../public/e9357c97e3e5b089e2697e0822c08d46.png"
 
+import { FaUser } from "react-icons/fa";
+import { IoIosMenu } from "react-icons/io";
 
 
 
@@ -9,18 +12,15 @@ const Header = () => {
 
     return (
         <HeaderBox>
-            <h1>Kosmo</h1>
+            <img src={kosmologo} alt="" />
 
-            <ul>
-                <li>Sobre Nós</li>
-                <li>Nossos Serviços</li>
-                <li>Nosso Clube</li>
-            </ul>
+            <p> Lorem ipsum dolor</p>
 
-            <div>
-                <button className='btn1' >cadastre-se</button>
-                <button className='btnStandart'>Login</button>
+            <div className="icons">
+                <p><FaUser /></p>
+                <p><IoIosMenu /></p>
             </div>
+           
         </HeaderBox>
     );
 };

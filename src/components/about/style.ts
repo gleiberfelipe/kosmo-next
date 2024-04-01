@@ -6,54 +6,100 @@ import styled from "styled-components";
 export const AboutBox = styled.div`
 display: flex;
 flex-direction: column;
-height: 100vh;
+width: 100%;
 font-family: Roboto, sans-serif;
 padding:0;
 margin: 0;
+background-color: rgb(17,17,17);
+align-items: center;
 
-h1{
-    font-size: 80px;
-    color: white;
-    text-align: start;
-    padding-left: 100px;
+
+
+img.logo{
+    width: 414px;
+   height: 210px;
+    position: relative;
+    top: 80px;
+    z-index: 3;
 }
 
-p{
-    color: white;
-    text-align: start;
-    padding-left: 100px;
-    font-size: 23px;
-    
-    text-align: justify;
-    width: 300px;
+.circlebox{
+    width: 900px;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: black;
+    justify-content: center;
+ 
 
-    span{
-        color: #f70bcf;
+    .circle{
+        width: 150px;
+        height: 150px;       
+        position: relative;
+        background: radial-gradient(circle at center, transparent 71%, rgb(17,17,17) 51%);
+        z-index: 2;
+      
+    }
+
+    img{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        z-index: 1;
+        bottom: 600px;
     }
 }
 
-button{
-    background-color: purple;
-    box-shadow: none;
-    color: white;
-    border-radius: 15px;
-    padding: 10px 25px;
-    width: 300px;
-    align-self: start;
-    margin-left: 100px;
+hr{
+    background-image: linear-gradient(to right, #4776e6, #5870e9, #6968eb, #7c5feb, #8e54e9);
+    border: none;
+    width: 146px;
+    height: 5px;
     margin-top: 50px;
-    font-family: Roboto, sans-serif;
-    font-size: 20px;
 }
 
+h1{
+    font-size: 50px;
+    color: white;
+}
 
-background-image: url("../../../public/2287961-ai-brush-removebg-lniaqzes.png");
-background-repeat: no-repeat;
-background-size: 100%;
-background-attachment: fixed;
-background-position: relative;
-background-position-y: -150px;
-background-position-x: 0px;
-background-color: black;
+p{
+    font-size: 20px;
+    color: white;
+    width: 530px;
+    text-align: justify;
+}
+
+@media only screen and (max-width: 768px){
+    
+    img.logo{
+        width: 207px;
+        height: 105px; 
+    }
+    .circlebox{
+        width: 405px;
+    height: 270px;
+    border: none;
+    background-color: rgb(17,17,17);
+
+    .circle{
+        width: 67px;
+        height: 67px; 
+    }
+    img{
+        width: 402px;
+        height: 267px;
+        bottom: 267px;
+        right: 0px;
+    }
+    }
+   
+    p{
+        width: 380px;
+    }
+    
+}
+
 
 `

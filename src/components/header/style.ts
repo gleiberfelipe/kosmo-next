@@ -4,45 +4,40 @@ export const HeaderBox = styled.div`
 
 display: flex;
 flex-direction: row;
-justify-content: space-around;
-background-color: gray;
-padding: 0;
+justify-content: space-between;
+background-color: rgb(17,17,17);
+padding: 10px 0;
 margin: 0;
 box-sizing: border-box;
 align-items: center;
-
+padding-left: 20px;
 font-family: Roboto, sans-serif;
 color: white;
-h1{
-    font-size: 20px;
-    
+img{
+   width: 100px;
+   object-fit: contain;
 }
 
-ul{
+.icons{
     display: flex;
-flex-direction: row;
-list-style: none;
-gap: 70px;
-font-family: Roboto, sans-serif;
-font-weight: 400;
-
+    flex-direction: row;
+    gap: 20px;
+    padding-right: 20px;
 }
 
-.btn1{
-    background-color: white;
-    color: #321c5c;
-    border-radius: 5px;
-    padding: 10px 25px;
-    width: 130px;
-    margin-right: 20px;
-    
+@media only screen and (max-width: 768px){
+
+    flex-wrap: nowrap;
+    width: 100%;
+    img{
+        width: 70px
+    }
+
+    .icons{
   
+        width: 100px;
+    }
 }
-.btnStandart{
-    background-color: #321c5c;
-    color: white;
-    border-radius: 5px;
-    padding: 10px 25px;
-    width: 130px;
-}
+
+
 `
