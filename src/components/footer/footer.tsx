@@ -5,24 +5,40 @@
 
 import { FooterBox } from './style';
 import suit from "../../../public/0b7f1ee5cc9abadfc16252d5bd050e34.jpg"
+import { Reveal } from '../animations/reveal/reveal';
+import { RevealReverse } from '../animations/revealReverse/revealReverse';
+import { Emerging } from '../animations/emerging/emerging';
+import { EmergingReverse } from '../animations/emergingReverse/emergingReverse';
+import { motion } from 'framer-motion';
 
 const Footer = () => {
 
     return (
         <FooterBox>
             <hr />
+            <Reveal>
             <h1>LOREM IPSUM</h1>
+            </Reveal>
+            <RevealReverse>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Atque molestiae fuga non tempore nostrum recusandae ratione,
                 est animi harum ducimus iure quas explicabo minus tempora quos
                 minima consequuntur sapiente libero!
             </p>
-
+            </RevealReverse>
+            <Emerging>
             <img src={suit} alt="" />
+            </Emerging>
+            <Reveal>
             <h1>LOREM IPSUM</h1>
+            </Reveal>
             <div className='tribox'>
-                <svg className='trianguloone' width="168" height="151" viewBox="0 0 168 151" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <motion.svg 
+                   initial={{ opacity: 0, y: -100 }}
+                   whileInView={{ opacity: 1, y: 0 }}
+                   transition={{ duration: 1, delay: 1.0 }}
+                   viewport={{ once: true }}  className='trianguloone' width="168" height="151" viewBox="0 0 168 151" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M3.0705 30.7062C-4.62751 17.3729 4.99501 0.70624 20.391 0.706245L147.697 0.70624C163.093 0.70625 172.715 17.3729 165.017 30.7063L101.364 140.956C93.6664 154.29 74.4214 154.29 66.7234 140.956L3.0705 30.7062Z" fill="url(#paint0_linear_49_280)" />
                     <defs>
                         <linearGradient id="paint0_linear_49_280" x1="-14.25" y1="0.70624" x2="182.338" y2="114.206" gradientUnits="userSpaceOnUse">
@@ -30,10 +46,15 @@ const Footer = () => {
                             <stop offset="1" stop-color="#8E54E9" />
                         </linearGradient>
                     </defs>
-                </svg>
+                </motion.svg>
 
 
-                <svg className='triangulotwo' width="111" height="100" viewBox="0 0 111 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <motion.svg 
+                   initial={{ opacity: 0, y: -100 }}
+                   whileInView={{ opacity: 1, y: 0 }}
+                   transition={{ duration: 1, delay: 1.5 }}
+                   viewport={{ once: true }} 
+                   className='triangulotwo' width="111" height="100" viewBox="0 0 111 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M4.73247 21.612C-0.266772 12.953 5.98228 2.12931 15.9808 2.12932L95.6551 2.12931C105.654 2.12932 111.903 12.953 106.903 21.6119L67.0662 90.6119C62.067 99.2709 49.5689 99.2709 44.5696 90.6119L4.73247 21.612Z" stroke="url(#paint0_linear_49_284)" stroke-width="4.02317" />
                     <defs>
                         <linearGradient id="paint0_linear_49_284" x1="-48" y1="65.9357" x2="28" y2="-65.7002" gradientUnits="userSpaceOnUse">
@@ -42,8 +63,13 @@ const Footer = () => {
                             <stop offset="1" stop-color="#01C9EA" />
                         </linearGradient>
                     </defs>
-                </svg>
-                <svg className='triangulothree' width="111" height="101" viewBox="0 0 111 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+                </motion.svg>
+                <motion.svg 
+                   initial={{ opacity: 0, y: -100 }}
+                   whileInView={{ opacity: 1, y: 0 }}
+                   transition={{ duration: 1, delay: 2.0 }}
+                   viewport={{ once: true }} 
+                    className='triangulothree' width="111" height="101" viewBox="0 0 111 101" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M3.81049 22.2927C-1.18875 13.6338 5.06031 2.81008 15.0588 2.81008L95.0035 2.81007C105.002 2.81007 111.251 13.6337 106.252 22.2927L66.2794 91.5268C61.2802 100.186 48.7821 100.186 43.7828 91.5268L3.81049 22.2927Z" stroke="url(#paint0_linear_49_285)" stroke-width="4.02317" />
                     <defs>
                         <linearGradient id="paint0_linear_49_285" x1="-49" y1="66.7516" x2="27.1561" y2="-65.1546" gradientUnits="userSpaceOnUse">
@@ -52,12 +78,12 @@ const Footer = () => {
                             <stop offset="1" stop-color="#01C9EA" />
                         </linearGradient>
                     </defs>
-                </svg>
+                </motion.svg>
             </div>
 
 
             <div className='teadropfather'>
-
+                <EmergingReverse>
                 <div className="children">
                     <div className="grandson">
 
@@ -88,12 +114,15 @@ const Footer = () => {
                             Assumenda quam rerum voluptates eaque. <br></br>Molestiae at exercitationem <br></br>
                             voluptates vitae <br></br>eum totam.
                         </p>
-                    </div>
-                    <div className="circle">
+                        <div className="circle">
                         <h2>10 vantagens do criador</h2>
                     </div>
+                    </div>
+                  
 
                 </div>
+                </EmergingReverse>
+                <Emerging>
                 <div className="children">
                     <div className="grandsonInverted">
 
@@ -124,11 +153,14 @@ const Footer = () => {
                             Assumenda quam rerum voluptates eaque. <br></br>Molestiae at exercitationem <br></br>
                             voluptates vitae <br></br>eum totam.
                         </p>
-                    </div>
-                    <div className="circleInverted">
+                        <div className="circleInverted">
                         <h2>10 vantagens do criador</h2>
                     </div>
+                    </div>
+                 
                 </div>
+                </Emerging>
+                <EmergingReverse>
                 <div className="children">
                     <div className="grandson">
 
@@ -159,12 +191,14 @@ const Footer = () => {
                             Assumenda quam rerum voluptates eaque. <br></br>Molestiae at exercitationem <br></br>
                             voluptates vitae <br></br>eum totam.
                         </p>
-                    </div>
-                    <div className="circle three">
+                        <div className="circle three">
                         <h2>10 vantagens do criador</h2>
                     </div>
+                    </div>
+               
 
                 </div>
+                </EmergingReverse>
                 <div className='wildBox'>
                     <div className='wildcard one'>
                         <div className="circle">

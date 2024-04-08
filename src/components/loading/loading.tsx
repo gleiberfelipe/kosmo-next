@@ -10,6 +10,10 @@ import { FcGoogle } from "react-icons/fc";
 import { FaMeta } from "react-icons/fa6";
 /* import ReactFlow, { ReactFlowProvider } from 'reactflow'; */
 import 'reactflow/dist/style.css';
+import { Emerging } from "../animations/emerging/emerging";
+import { EmergingReverse } from "../animations/emergingReverse/emergingReverse";
+import { Reveal } from "../animations/reveal/reveal";
+import { RevealReverse } from "../animations/revealReverse/revealReverse";
 
 
 
@@ -76,6 +80,7 @@ const Loading = () => {
 
         <Loadbox className="loader">
             <hr />
+            <Emerging>
             <div className="imgs">
                 <img src={map} alt="" />
 
@@ -88,6 +93,8 @@ const Loading = () => {
                     </p>
                 </div>
             </div>
+            </Emerging>
+            <EmergingReverse>
             <div className="imgs">
                 <div>
                     <h2> Clube De Vantagens</h2>
@@ -99,18 +106,22 @@ const Loading = () => {
                 </div>
                 <img src={diamonds} alt="" />
             </div>
-
+            </EmergingReverse>
             <hr />
+            <Reveal>
             <h1>LOREM IPSUM</h1>
-
+            </Reveal>
+            <RevealReverse>
             <p className="pboxagain">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Atque molestiae fuga non tempore nostrum recusandae ratione,
                 est animi harum ducimus iure quas explicabo minus tempora quos
                 minima consequuntur sapiente libero!
             </p>
-
+            </RevealReverse>
+            <Reveal>
             <div className="screens">
+                
                 <div className="children">
                     <h1> Antes da <span>Kosmo</span></h1>
                     <svg width="428" height="865" viewBox="0 0 428 865" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -125,9 +136,12 @@ const Loading = () => {
                     </svg>
                     <img className="print one" src={screenOne} alt="" />
                 </div>
+                
+                
                 <div className="icon">
                     <p ><FcGoogle /></p>
                 </div>
+                
                 <div className="children">
                     <h1> Depois da <span>Kosmo</span></h1>
                     <svg width="428" height="865" viewBox="0 0 428 865" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -143,6 +157,8 @@ const Loading = () => {
                     <img className="print two" src={screentwo} alt="" />
                 </div>
             </div>
+            </Reveal>
+            <RevealReverse>
             <div className="screens">
                 <div className="children">
                     <h1> Antes da <span>Kosmo</span></h1>
@@ -176,15 +192,19 @@ const Loading = () => {
                     <img className="print four" src={screenfour} alt="" />
                 </div>
             </div>
+            </RevealReverse>
             <hr />
+            <Reveal>
             <h1>LOREM IPSUM</h1>
-
+            </Reveal>
+            <RevealReverse>
             <p className="pboxagain">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Atque molestiae fuga non tempore nostrum recusandae ratione,
                 est animi harum ducimus iure quas explicabo minus tempora quos
                 minima consequuntur sapiente libero!
             </p>
+            </RevealReverse>
             {/*     <ReactFlowProvider>
       <div style={{ width: '100%', height: '150vh' }}>
       <ReactFlow
@@ -212,14 +232,17 @@ const Loading = () => {
             </div>
 
             <hr />
+            <Reveal>
             <h1>LOREM IPSUM</h1>
-
+            </Reveal>
+            <RevealReverse>
             <p className="pboxagain">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Atque molestiae fuga non tempore nostrum recusandae ratione,
                 est animi harum ducimus iure quas explicabo minus tempora quos
                 minima consequuntur sapiente libero!
             </p>
+            </RevealReverse>
 
             <div className="ballBox">
                 <div className="bigball"></div>

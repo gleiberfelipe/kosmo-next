@@ -10,6 +10,8 @@ import { BsFillMenuButtonWideFill } from "react-icons/bs";
 import { BsShieldShaded } from "react-icons/bs";
 import { PiRocketLaunchLight } from "react-icons/pi";
 import { MdGroups } from "react-icons/md";
+import { Emerging } from '../animations/emerging/emerging';
+import { EmergingReverse } from '../animations/emergingReverse/emergingReverse';
 
 
 
@@ -18,6 +20,7 @@ const Service = () => {
 
     return (
         <ServiceBox>
+            <Emerging>
             <div className="box">
                 <div>
                     <h1>Lorem, ipsum dolor.</h1>
@@ -29,6 +32,8 @@ const Service = () => {
                     <div className="triangulo"></div>
                 </div>
             </div>
+            </Emerging>
+            <EmergingReverse>
             <div className="box">
                 <div>
                     <p className="circle"><BsChatLeftDots /></p>
@@ -39,6 +44,8 @@ const Service = () => {
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
             </div>
+            </EmergingReverse>
+            <Emerging>
             <div className="box">
                 <div>
                     <h1>Lorem, ipsum dolor.</h1>
@@ -49,6 +56,8 @@ const Service = () => {
                     <div className="triangulo"></div>
                 </div>
             </div>
+            </Emerging>
+            <EmergingReverse>
             <div className="box">
                 <div>
                     <p className="circle"><BsShieldShaded /></p>
@@ -59,6 +68,8 @@ const Service = () => {
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
             </div>
+            </EmergingReverse>
+            <Emerging>
             <div className="box">
                 <div>
                     <h1>Lorem, ipsum dolor.</h1>
@@ -69,6 +80,8 @@ const Service = () => {
                     <div className="triangulo"></div>
                 </div>
             </div>
+            </Emerging>
+            <EmergingReverse>
             <div className="box">
                 <div>
                     <p className="circle"><MdGroups /></p>
@@ -80,7 +93,7 @@ const Service = () => {
 
                 </div>
             </div>
-
+            </EmergingReverse>
 
         </ServiceBox>
     );

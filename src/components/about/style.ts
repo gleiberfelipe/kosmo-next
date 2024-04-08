@@ -15,13 +15,6 @@ align-items: center;
 
 
 
-img.logo{
-    width: 414px;
-   height: 210px;
-    position: relative;
-    top: 80px;
-    z-index: 3;
-}
 
 .circlebox{
     width: 900px;
@@ -38,7 +31,7 @@ img.logo{
         height: 150px;       
         position: relative;
         background: radial-gradient(circle at center, transparent 71%, rgb(17,17,17) 51%);
-        z-index: 2;
+        z-index: 5;
       
     }
 
@@ -46,7 +39,7 @@ img.logo{
         width: 100%;
         height: 100%;
         position: relative;
-        z-index: 1;
+        z-index: 4;
         bottom: 600px;
     }
 }

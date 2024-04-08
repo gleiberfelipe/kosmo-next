@@ -12,7 +12,18 @@ flex-wrap: wrap;
 color: white;
 padding: 0 150px;
 
-
+@keyframes levitate
+{
+  
+    0%,100%{
+		
+		transform:translatey(0)
+	}
+	50%{
+		
+		transform:translatey(-20px)
+	}   
+}
 
 .box{
     display: flex;
@@ -35,6 +46,11 @@ padding: 0 150px;
   border-right: 30px solid transparent; /* ajuste conforme necessário */
   border-bottom: 50px solid #8e54e9; /* ajuste conforme necessário */
   z-index: 1;
+  animation-name: levitate;
+    animation: levitate ease-in-out infinite;
+    animation-duration: 6s;   
+    animation-fill-mode: forwards;
+    animation-delay: 0.3s
 }
 .trianguloTwo {
   width: 0;
@@ -50,6 +66,11 @@ padding: 0 150px;
   padding: 0;
   margin: 0;
   z-index: 1;
+  animation-name: levitate;
+    animation: levitate ease-in-out infinite;
+    animation-duration: 5s;   
+    animation-fill-mode: forwards;
+    animation-delay: 0.1s
 }
     h1{
         font-size: 27px;

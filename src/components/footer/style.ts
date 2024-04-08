@@ -42,6 +42,29 @@ img{
     object-fit: cover;
 }
 
+
+@keyframes shaking
+{
+   /* 0% { width: 0; height: 0vh;fill-opacity: 0;}
+    50% { width: 0; height: 0vh;fill-opacity: 0;}
+    100% {width:600px; height: 500px; fill-opacity: 1;} */
+    0%{
+		
+		transform: rotateZ(0deg)
+	}
+    20%{
+		
+		transform: rotateZ(0deg)
+	}
+	30%{
+		
+		transform: rotateZ(360deg)
+	}
+    100%{
+		
+		transform: rotateZ(360deg)
+	}   
+}
 .tribox{
     display: flex;
     flex-direction: column;
@@ -51,18 +74,32 @@ img{
   
   position: relative;
   z-index: 3;
+  animation-name: shaking;
+    animation: shaking ease-in-out infinite;
+    animation-duration: 10s;   
+    animation-fill-mode: forwards;
 }
 .triangulotwo {
   
   position: relative;
   z-index: 2;
   bottom: 65px;
+  animation-name: shaking;
+    animation: shaking ease-in-out infinite;
+    animation-duration: 10s;   
+    animation-fill-mode: forwards;
+    animation-delay: 0.3s
 }
 .triangulothree {
   
   position: relative;
   z-index: 1;
   bottom: 120px;
+  animation-name: shaking;
+    animation: shaking ease-in-out infinite;
+    animation-duration: 10s;   
+    animation-fill-mode: forwards;
+    animation-delay: 0.6s;
 }
 
 
@@ -146,7 +183,7 @@ img{
         width: 350px;
         position: relative;
         bottom: 528px;
-        left: 580px;
+        left: 280px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -174,7 +211,7 @@ img{
         width: 350px;
         position: relative;
         bottom: 528px;
-        left: 25px;
+        right: 275px;
         display: flex;
         flex-direction: column;
         align-items: center;

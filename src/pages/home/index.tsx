@@ -4,6 +4,7 @@ import Header from "../../components/header/header";
 import Service from "../../components/service/service";
 import Loading from "../../components/loading/loading";
 import RealFooter from "../../components/realfooter/realfooter";
+import Logo from "../../components/logo/logo";
 
 
 
@@ -17,6 +18,7 @@ const Home = () => {
     <div style={{padding:"0", margin: "0", boxSizing: "border-box"}}>
     
       <Header/>   
+      <Logo/>
       <About/>        
       <Service/>        
       <Footer/>

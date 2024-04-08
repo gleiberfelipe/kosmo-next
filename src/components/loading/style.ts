@@ -125,6 +125,19 @@ h1{
 }
  */
 
+
+@keyframes levitate
+{
+  
+    0%,100%{
+		
+		transform:translatey(0)
+	}
+	50%{
+		
+		transform:translatey(-20px)
+	}   
+}
 .circleBox{
   
     background-color: rgb(17,17,17);
@@ -143,6 +156,12 @@ h1{
         background-size: cover; 
         background-position: center; 
         border: 5px solid #8e54e9;
+        animation-name: levitate;
+        animation: levitate ease-in-out infinite;
+        animation-duration: 6s;   
+        animation-fill-mode: forwards;
+        animation-delay: 0.3s
+
     }
     .circleTwo{
 
@@ -158,6 +177,12 @@ h1{
         background-size: cover; 
         background-position: center; 
         border: 5px solid #8e54e9;
+        animation-name: levitate;
+        animation: levitate ease-in-out infinite;
+        animation-duration: 7s;   
+        animation-fill-mode: forwards;
+        animation-delay: 0.2s
+
     }
     .circleThree{
 
@@ -173,6 +198,12 @@ h1{
         background-size: cover; 
         background-position: center; 
         border: 5px solid #8e54e9;
+        animation-name: levitate;
+        animation: levitate ease-in-out infinite;
+        animation-duration: 8s;   
+        animation-fill-mode: forwards;
+        animation-delay: 0.4s
+
     }
 
     .circleFour{
@@ -189,6 +220,12 @@ h1{
         background-size: cover; 
         background-position: center; 
         border: 5px solid #8e54e9;
+        animation-name: levitate;
+        animation: levitate ease-in-out infinite;
+        animation-duration: 9s;   
+        animation-fill-mode: forwards;
+        animation-delay: 0.5s
+
     }
     }
     .circleFive{
@@ -205,6 +242,12 @@ h1{
         background-size: cover; 
         background-position: center; 
         border: 5px solid #8e54e9;
+        animation-name: levitate;
+        animation: levitate ease-in-out infinite;
+        animation-duration: 6s;   
+        animation-fill-mode: forwards;
+        animation-delay: 0.1s
+
        
     }
     
@@ -223,7 +266,7 @@ h1{
         position: relative;
         width: 150px;
         height: 5px;
-        bottom: 800px;
+        bottom: 820px;
         left: 300px;
         transform: rotateZ(230deg) ;
         z-index: 1;
@@ -243,13 +286,38 @@ h1{
         position: relative;
         width: 250px;
         height: 5px;
-        bottom: 350px;
+        bottom: 400px;
         left: 500px;
         transform: rotateZ(250deg) ;
         z-index: 1;
     }
 }
 
+
+@keyframes rotate
+{
+  
+    0%{
+		
+		transform: rotate(0)
+	}
+	100%{
+		
+		transform: rotate(360deg)
+	}   
+}
+@keyframes rotateInverted
+{
+  
+    0%{
+		
+		transform: rotateZ(0)
+	}
+	100%{
+		
+		transform: rotateZ(-360deg)
+	}   
+}
 
 .bigball{
     width: 600px;
@@ -258,6 +326,7 @@ h1{
     background-color: transparent;
     border: 2px dotted gray;
     margin: 100px;
+    
    
 
 
@@ -265,7 +334,15 @@ h1{
 
 .ballBox{
 
-    height: 900px;
+    height: 300px;
+    height: 300px;
+    transform-origin: center;
+    animation-name: rotate;
+    animation: rotate  infinite;
+    animation-duration: 30s;   
+    animation-fill-mode: forwards;
+
+        
 }
 
 .ball{
@@ -276,6 +353,10 @@ h1{
     position: relative;
     background-size: cover; 
     background-position: center; 
+    animation-name: rotateInverted;
+        animation: rotateInverted infinite;
+        animation-duration: 30s;   
+ 
 }
 .ball.one{
     background-image: url('../../../public/36ca7c6dd22f1acad34ea31d936cbc5f.jpg'); 
@@ -312,6 +393,14 @@ h1{
 
     p{
         width: 400px;
+    }
+    .pboxagain{
+        width: 400px !important;
+        display: flex;
+        text-align: justify !important;
+        padding: 0 10px !important
+     
+        
     }
     .imgs{
         flex-direction: column !important;
@@ -387,6 +476,7 @@ align-self: center;
 
     .circleBox{
     
+     
         .circleOne{
         width: 250px !important;
         height: 250px !important;
@@ -423,15 +513,15 @@ align-self: center;
             left: 0px;
         }
         .barTwo{
-            bottom: 400px;
-            left: 150px;
+            bottom: 420px;
+            left: 130px;
         }
         .barThree{
             bottom: 250px;
             left: 100px;
         }
         .barFour{
-            bottom: 250px;
+            bottom: 270px;
             left: 120px;
         }
     }
@@ -439,48 +529,51 @@ align-self: center;
     .ballBox{
 
 height: 600px;
+
+
 }
     .bigball{
-        width: 350px;
-        height: 350px;
+        width: 250px;
+        height: 250px;
+        
     
     }
 
     .ball{
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
  
 }
 .ball.one{
     
-    bottom: 500px;
-    left: 250px;    
+    bottom: 400px;
+    left: 220px;    
 }
 .ball.two{
  
-    bottom: 500px;
-    left: 370px;     
+    bottom: 400px;
+    left: 330px;     
 }
 .ball.three{
  
-    bottom: 380px;
-    left: 370px; 
+    bottom: 280px;
+    left: 330px; 
 }
 .ball.four{
  
-    bottom: 390px;
-    left: 240px; 
+    bottom: 280px;
+    left: 220px; 
 }
 .ball.five{
  
-    bottom: 520px;
-    left: 100px; 
+    bottom: 380px;
+    left: 110px; 
 }
 
 .ball.six{
     background-image: url('../../../public/c84a3373e44e1c612d9ab95ec091ce2b.jpg'); 
-    bottom: 800px;
-    left: 90px; 
+    bottom: 600px;
+    left: 110px; 
 }
 }
 
