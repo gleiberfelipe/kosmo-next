@@ -81,7 +81,7 @@ const Loading = () => {
         <Loadbox className="loader">
             <hr />
             <Emerging>
-            <div className="imgs">
+            <div className="imgs one">
                 <img src={map} alt="" />
 
                 <div className="boxOne">
@@ -245,13 +245,15 @@ const Loading = () => {
             </RevealReverse>
 
             <div className="ballBox">
-                <div className="bigball"></div>
+                <div className="bigball">
                 <div className="ball one"></div>
                 <div className="ball two"></div>
                 <div className="ball three"></div>
                 <div className="ball four"></div>
                 <div className="ball five"></div>
                 <div className="ball six"></div>
+                </div>
+          
 
             </div>
 

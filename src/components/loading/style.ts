@@ -326,6 +326,11 @@ h1{
     background-color: transparent;
     border: 2px dotted gray;
     margin: 100px;
+    transform-origin: center;
+    animation-name: rotate;
+    animation: rotate  infinite;
+    animation-duration: 40s;   
+    animation-fill-mode: forwards;
     
    
 
@@ -334,13 +339,10 @@ h1{
 
 .ballBox{
 
-    height: 300px;
-    height: 300px;
-    transform-origin: center;
-    animation-name: rotate;
-    animation: rotate  infinite;
-    animation-duration: 30s;   
-    animation-fill-mode: forwards;
+    height: 600px;
+    height: 900px;
+    margin: 100PX 0
+
 
         
 }
@@ -355,47 +357,49 @@ h1{
     background-position: center; 
     animation-name: rotateInverted;
         animation: rotateInverted infinite;
-        animation-duration: 30s;   
+        animation-duration: 40s;
+        cursor: pointer;    
  
 }
 .ball.one{
     background-image: url('../../../public/36ca7c6dd22f1acad34ea31d936cbc5f.jpg'); 
-    bottom: 750px;
-    left: 350px;    
+    bottom: 50px;
+    left: 250px;    
 }
 .ball.two{
     background-image: url('../../../public/39532aab00e737c2ccc737f1cec84adb.jpg');
-    bottom: 700px;
-    left: 600px;     
+    bottom: 0px;
+    left: 500px;     
 }
 .ball.three{
     background-image: url('../../../public/a303a25e2cf567bfc9f116796f95d73a.jpg');
-    bottom: 520px;
-    left: 620px; 
+    top: 220px;
+    left: 500px; 
 }
 .ball.four{
     background-image: url('../../../public/f4a453b9dc62fbc5292961c9f5ce7b0f.jpg'); 
-    bottom: 450px;
-    left: 350px; 
+    top: 250px;
+    left: 250px; 
 }
 .ball.five{
     background-image: url('../../../public/ed081b73cbbdca982d22b2a6774a135a.jpg'); 
-    bottom: 720px;
-    left: 80px; 
+    bottom: 20px;
+    left: -10px; 
 }
 .ball.six{
     background-image: url('../../../public/c84a3373e44e1c612d9ab95ec091ce2b.jpg'); 
-    bottom: 1100px;
-    left: 100px; 
+    bottom: 400px;
+    left: 0px; 
 }
 
 @media only screen and (max-width: 768px){
+ 
 
     p{
-        width: 400px;
+        width: 300px;
     }
     .pboxagain{
-        width: 400px !important;
+        width: 300px !important;
         display: flex;
         text-align: justify !important;
         padding: 0 10px !important
@@ -419,16 +423,18 @@ h1{
         }
 
 
-        .imgs.one{
-            flex-direction: column-reverse !important
-        }
+       
 
         .pboxagain{
             width: 380px !important;
             text-align: justify !important;
         }
     }
-
+    .imgs.one{
+            display: flex;
+            flex-direction: column-reverse !important;
+            
+        }
     .screens{
     display: flex;
     flex-direction: column !important;
@@ -452,20 +458,20 @@ h1{
 width: 414px !important;
 align-self: center;
             h1{
-                width: 414px;
+                width: 380px;
             }
             max-height: 700px;
             margin-bottom: 100px !important;
             
             svg{
-                width: 380px;
+                width: 340px;
             }
 
             img{
-                width: 350px !important;
-                height: 735px !important;
-                bottom: 804px !important;
-                border-radius: 15px;
+                width: 320px !important;
+                height: 670px !important;
+                bottom: 770px !important;
+                border-radius: 35px;
                         
                 }
          }
@@ -505,7 +511,7 @@ align-self: center;
             width: 75px !important;
             height: 75px !important; 
             bottom: 100px !important;
-            left: 235px !important;
+            left: 195px !important;
         }
 
         .barOne{
@@ -522,19 +528,28 @@ align-self: center;
         }
         .barFour{
             bottom: 270px;
-            left: 120px;
+            left: 90px;
         }
     }
 
     .ballBox{
 
-height: 600px;
+height: 250px;
+width: 250px;
+display: flex;
+flex-wrap: wrap;
+align-items: center;
 
+border-radius: 50%;
 
 }
     .bigball{
-        width: 250px;
-        height: 250px;
+        width: 250px !important;
+        height: 250px !important;
+        margin: 0;
+        padding: 0;
+        border-radius: 50%;
+       
         
     
     }
@@ -542,38 +557,39 @@ height: 600px;
     .ball{
     width: 50px;
     height: 50px;
+    
  
 }
 .ball.one{
     
-    bottom: 400px;
-    left: 220px;    
+    bottom: 20px;
+    left: 100px;    
 }
 .ball.two{
  
-    bottom: 400px;
-    left: 330px;     
+    bottom: 20px;
+    left: 200px;     
 }
 .ball.three{
  
-    bottom: 280px;
-    left: 330px; 
+    toP: 50px;
+    left: 210px; 
 }
 .ball.four{
  
-    bottom: 280px;
-    left: 220px; 
+    top: 70px;
+    left: 110px; 
 }
 .ball.five{
  
-    bottom: 380px;
-    left: 110px; 
+    bottom: 50px !important;
+    left: -10px; 
 }
 
 .ball.six{
     background-image: url('../../../public/c84a3373e44e1c612d9ab95ec091ce2b.jpg'); 
-    bottom: 600px;
-    left: 110px; 
+    bottom: 220px;
+    left: 0px; 
 }
 }
 
